@@ -1,11 +1,11 @@
 
 #!/bin/bash
 
-nstart_seq=0
-nstep_seq=5
-nend_seq=30
+NSTART_SEQ=0
+NSTEP_SEQ=5
+NEND_SEQ=30
 
-for NUMBER in `seq ${nstart_seq} ${nstep_seq} ${nend_seq}`; do
+for NUMBER in `seq ${NSTART_SEQ} ${NSTEP_SEQ} ${NEND_SEQ}`; do
         echo $NUMBER
         echo $NUMBER >> seq.txt
 done
