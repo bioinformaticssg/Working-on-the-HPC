@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIRECTORY="new_hello_directory" # assigns the variable called DIRECTORY to the string "new_hello_directory"
+DIR="new_hello_directory" # assigns the variable called DIR to the string "new_hello_directory"
 
-mkdir ${DIRECTORY} # makes a new directory. When you see ${DIRECTORY} it will use the string "new_hello_directory"
-echo "Hello, world!" > ${DIRECTORY}/hello_file.txt # prints message to a file in the indicated path
+mkdir ${DIR} # makes a new directory. When you see ${DIR} it will use the string "new_hello_directory"
+echo "Hello, world!" > ${DIR}/hello_file.txt # prints message to a file in the indicated path
