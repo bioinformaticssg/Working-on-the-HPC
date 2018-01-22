@@ -7,7 +7,7 @@ NSTART_SEQ=$1
 NSTEP_SEQ=$2
 NEND_SEQ=$3
 
-for NUMBER in `seq ${NSTART_SEQ} ${NSTEP_SEQ} ${NEND_SEQ}`; do
+for NUMBER in `seq ${NSTART_SEQ} ${NSTEP_SEQ} ${NEND_SEQ}`; do # seq is surrounded by back quotes
         echo $NUMBER # prints to stdout
         echo $NUMBER >> seq.txt # prints to file
 done
