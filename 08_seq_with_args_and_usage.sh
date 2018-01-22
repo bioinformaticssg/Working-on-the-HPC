@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# If the arguments given do not equal (-ne) 3, then the following message 
+# If the number of command line parameters given ($#) do not equal (-ne) 3, then the following message 
 # will appear to provide the user information about the arguments that should be provided
 if [ $# -ne 3 ]; then
     echo "usage: nstart_seq nstep_seq nend_seq"
