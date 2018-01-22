@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello, world!" # prints to stdout
+echo "Hello, world!" # prints to stdout (the terminal)
