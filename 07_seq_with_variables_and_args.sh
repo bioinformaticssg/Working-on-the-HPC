@@ -9,5 +9,5 @@ NEND_SEQ=$3
 
 for NUMBER in `seq ${NSTART_SEQ} ${NSTEP_SEQ} ${NEND_SEQ}`; do # seq is surrounded by back quotes
         echo $NUMBER # prints to stdout
-        echo $NUMBER >> seq2.txt # prints to file
+        echo $NUMBER >> seq3.txt # prints to file
 done
