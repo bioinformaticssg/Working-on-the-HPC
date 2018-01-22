@@ -8,5 +8,7 @@
 
 module load SRAToolKit
 
-# Retrieving SRA data and converting to fastq
+# Retrieving SRA data and converting it to fastq format
+# -X prints the first five spots 
+# -Z prints to standard out
 fastq-dump -X 5 -Z SRR390728
