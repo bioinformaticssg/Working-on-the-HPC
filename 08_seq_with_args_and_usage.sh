@@ -8,7 +8,7 @@ if [ $# -ne 3 ]; then
 fi
 
 # Instead of assigning variables, here the command line parameters are used directly (indicated by $1, $2, and $3)
-for NUMBER in `seq $1 $2 $3`; do
+for NUMBER in `seq $1 $2 $3`; do # seq is surrounded by back quotes
         echo $NUMBER # prints to stdout
         echo $NUMBER >> seq.txt # prints to file named seq.txt
 done
