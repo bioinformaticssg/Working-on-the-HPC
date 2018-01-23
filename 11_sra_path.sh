@@ -12,9 +12,11 @@
 module load blcr
 module load SRAToolKit
 
+
 DIR=/data/users/${USER}/BioinformaticsSG/Working-on-the-HPC
 SRA_DIR=${DIR}/sra_files
 
+cd ${DIR}
 mkdir ${SRA_DIR}
 
 # Retrieving SRA data and converting to fastq format
