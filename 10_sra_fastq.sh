@@ -2,8 +2,8 @@
 #!/bin/bash
 
 #$ -N sra_data_dump_10      # name of the job
-#$ -o sra.out               # contains what would normally be printed to stdout (the terminal)
-#$ -e sra.err               # file name to print standard error messages to. These messages would normally be printed to the the terminal
+#$ -o sra.out               # contains what would normally be printed to stdout (the terminal). As it is, sra.out will print to the current directory.
+#$ -e sra.err               # file name to print standard error messages to. These messages would normally be printed to the the terminal. As it is, sra.err will print to the current directory.
 #$ -q free64,som,asom       # request cores from the free64, som, asom queues.
 #$ -pe openmp 8-64          # request parallel environment. You can include a minimum and maximum core count.
 #$ -m beas                  # send you email of job status (b)egin, (e)rror, (a)bort, (s)uspend
