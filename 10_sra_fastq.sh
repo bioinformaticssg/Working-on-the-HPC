@@ -2,8 +2,8 @@
 #!/bin/bash
 
 #$ -N sra_data_dump_10      # name of the job
-#$ -o ./sra_files/sra.out   # contains what would normally be printed to stdout (the terminal)
-#$ -e ./sra_files/sra.err   # file name to print standard error messages to. These messages would normally be printed to the the terminal
+#$ -o sra.out               # contains what would normally be printed to stdout (the terminal)
+#$ -e sra.err               # file name to print standard error messages to. These messages would normally be printed to the the terminal
 #$ -q free64,som,asom       # request cores from the free64, som, asom queues.
 #$ -pe openmp 8-64          # request parallel environment. You can include a minimum and maximum core count.
 #$ -m beas                  # send you email of job status (b)egin, (e)rror, (a)bort, (s)uspend
@@ -11,8 +11,6 @@
 
 module load blcr
 module load SRAToolKit
-
-mkdir ./sra_files
 
 # Retrieving SRA data and converting to fastq format
 # -X prints only the first 5 spots (20 lines)
