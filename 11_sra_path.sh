@@ -7,7 +7,7 @@
 #$ -q free64,som,asom       # request cores from the free64, som, asom queues.
 #$ -pe openmp 8-64          # request parallel environment. You can include a minimum and maximum core count.
 #$ -m beas                  # send you email of job status (b)egin, (e)rror, (a)bort, (s)uspend
-#$ -ckpt blcr               # (c)checkpoint: writes a snapshot of a process to disk, (r)estarts the process after the checkpoint is complete
+#$ -ckpt blcr               # (c)heckpoint: writes a snapshot of a process to disk, (r)estarts the process after the checkpoint is complete
 
 module load blcr
 module load SRAToolKit
