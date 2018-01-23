@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-#$ -N sra_data_dump_10      # name of the job
+#$ -N sra_data_dump_11      # name of the job
 #$ -o ${SRA_DIR}/sra.out    # contains what would normally be printed to stdout (the terminal)
 #$ -e ${SRA_DIR}/sra.err    # file name to print standard error messages to. These messages would normally be printed to the the terminal
 #$ -q free64,som,asom       # request cores from the free64, som, asom queues.
