@@ -1,3 +1,3 @@
 # Working-on-the-HPC
 
-##TODO: write stuff in here
+Coming eventually...script descriptions!
