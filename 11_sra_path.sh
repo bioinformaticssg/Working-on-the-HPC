@@ -12,16 +12,18 @@
 module load blcr
 module load SRAToolKit
 
+set -eoux pipefail
+
 # Here we are assigning variables with paths
 DIR=/data/users/$USER/BioinformaticsSG/Working-on-the-HPC
-DATA=${DIR}/sra_files/data
+DATA_DIR=${DIR}/sra_files/data
 
 # Here we are making a folder using the path we assigned above
-mkdir -p ${DATA}
+mkdir -p ${DATA_DIR}
 # Here we are changing our current directory to the new file
-# cd ${DATA}
+cd ${DATA_DIR}
 
 # Retrieving SRA data and converting to fastq format
 # -X prints only the first 5 spots (20 lines)
 # Data will show up in the new directory as SRR390728.fastq
-fastq-dump -X 5 ${DATA}/SRR390728
+fastq-dump -X 5 SRR390728
