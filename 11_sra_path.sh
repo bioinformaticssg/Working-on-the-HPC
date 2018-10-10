@@ -12,11 +12,9 @@
 module load blcr
 module load SRAToolKit
 
-set -eoux pipefail
-
 # Here we are assigning variables with paths
-DIR=/data/users/$USER/BioinformaticsSG/Working-on-the-HPC
-DATA_DIR=${DIR}/sra_files/data
+DIR=/data/users/$USER/BioinformaticsSG/Working-on-the-HPC/sra_files
+DATA_DIR=${DIR}/data
 
 # Here we are making a folder using the path we assigned above
 mkdir -p ${DATA_DIR}
